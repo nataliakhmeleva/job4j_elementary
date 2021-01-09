@@ -12,7 +12,7 @@ public class Machine {
         for (int i = 0; i < coins.length; i++) {
             while (changeFromShop >= coins[i]) {
                 changeFromShop -= coins[i];
-                rsl[i] = coins[i];
+                rsl[size] = coins[i];
                 size++;
             }
         }
