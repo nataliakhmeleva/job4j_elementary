@@ -1,6 +1,6 @@
 package ru.job4j.oop.profession;
 
-public class Builder extends Engineer{
+public class Builder extends Engineer {
     private String project;
 
     public Builder(String name, String surname, String education,
@@ -9,7 +9,11 @@ public class Builder extends Engineer{
         this.project = project;
     }
 
-    private Order build(House house){
-        return new Order(house);
+    private String build(String house) {
+        return house;
+    }
+
+    public String getProject() {
+        return project;
     }
 }
