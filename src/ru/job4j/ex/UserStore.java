@@ -5,11 +5,9 @@ public class UserStore {
         for (User usernames : users) {
             if (usernames.getUsername().equals(login)) {
                 return usernames;
-            } else {
-                throw new UserNotFoundException("User is not found.");
             }
         }
-        return null;
+        throw new UserNotFoundException("User is not found.");
     }
 
     public static boolean validate(User user) throws UserInvalidException {
